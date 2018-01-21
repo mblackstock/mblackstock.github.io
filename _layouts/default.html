@@ -2,6 +2,7 @@
 <html lang="{{ site.lang | default: "en-US" }}">
   <head>
     <meta charset="utf-8">
+    <title>Mike Blackstock{% if page.title %} : {{ page.title }}{% endif %}</title>
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
 
 {% seo %}
@@ -17,8 +18,8 @@
     <div class="wrapper">
       <header>
         <h1 class="header">{{ site.title }}</h1>
-        <p class="header">{{ site.description }}</p>
-        <p class="header">This project is maintained by <a class="header name" href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
+        <img src="/assets/images/mike.jpg"></img>
+        <p class="header"><a href="/">{{ site.description }}</a></p>
       </header>
 
       <section>
@@ -26,7 +27,7 @@
       </section>
 
       <footer>
-        <p><small>Hosted on <a href="https://pages.github.com">GitHub Pages</a> using the Dinky theme</small></p>
+        <p><small>Maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a> hosted on <a href="https://pages.github.com">GitHub Pages.</a></small></p>
       </footer>
     </div>
     <!--[if !IE]><script>fixScale(document);</script><![endif]-->

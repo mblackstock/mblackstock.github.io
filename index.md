@@ -1,37 +1,18 @@
-## Welcome Mike's Web Site
+# Home
 
-You can use the [editor on GitHub](https://github.com/mblackstock/mblackstock.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+I'm a software developer, researcher and entrepreneur.  Currently I am CTO and co-founder of [Sense Tecnic Systems](http://www.sensetecnic.com) (STS).  Previously, I've been a researcher at the [University of British Columbia](https://www.ubc.ca/) and worked in tech lead positions in startups in Vancouver, BC.
 
-### Markdown
+My current research interests include applications, tools and middleware for the Internet of Things.  My current work at STS focuses on cloud-hosted and distributed data flow tools using [Node-RED](https://nodered.org). Previously I designed the Web of Things Toolkit - the WoTKit - a web centric system for managing 'things', controlling them, collecting data from them, and storing data they emit.  In my PhD thesis work I proposed a common programming model for [ubiquitous computing](https://en.wikipedia.org/wiki/Ubiquitous_computing) systems based on existing systems' abstractions, and evaluated this model by integrating several representative and well known research systems.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+At UBC and previous companies I've worked on a variety of projects.  Mobile applications for citizen engagement, mobile and social network applications to encourage sustainable behaviours on campus, systems to support large scale interaction and convergence of mobile phones, situated displays and sensors, financial transaction management software, peer to peer collaboration systems, mobile enterprise middleware, mobile phone multiplayer games, and Mac OS printer drivers.
 
-```markdown
-Syntax highlighted code block
+## Details
 
-# Header 1
-## Header 2
-### Header 3
+* [Industry Experience](/industry)
+* [Publications](/publications)
+* [Projects](/projects)
 
-- Bulleted
-- List
+## Contact
 
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/mblackstock/mblackstock.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+| email: mike [at] mblackstock.com | twitter: [@mblackstock](https://twitter.com/mblackstock) |
