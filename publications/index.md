@@ -71,7 +71,7 @@ title: Publications
 #### 2006
 
 * Michael Blackstock, Rodger Lea, and Charles Krasic, Toward Wide Area Interaction with Ubiquitous Computing Environments. 1st European Conference on Smart Sensing and Context, Enchede, The Netherlands, October 2006.
-Michael Blackstock, Rodger Lea, and Charles Krasic, Toward a Shared Model for Wide Area Interoperability of Ubiquitous Computing Environments. System Support for Ubiquitous Computing Workshop (UBISYS) 2006 at Ubicomp 2006, Orange County, CA, September 2006. [PDF]
+* Michael Blackstock, Rodger Lea, and Charles Krasic, Toward a Shared Model for Wide Area Interoperability of Ubiquitous Computing Environments. System Support for Ubiquitous Computing Workshop (UBISYS) 2006 at Ubicomp 2006, Orange County, CA, September 2006. [PDF]
 
 #### Patents
 
@@ -97,8 +97,8 @@ Michael Blackstock, Rodger Lea, and Charles Krasic, Toward a Shared Model for Wi
 
 #### Articles
 
-Lyn Bartram, Michael Blackstock, Designing Portable Collaborative Networks. for Colligo Networks, ACM Queue vol. 1, no. 3 - May 2003. [Article (HTML)]
-Michael Blackstock, Introducing Bluetooth. for SynchroPoint Wireless, BC TIA Monitor, December 2000. [Article (PDF)]
+* Lyn Bartram, Michael Blackstock, Designing Portable Collaborative Networks. for Colligo Networks, ACM Queue vol. 1, no. 3 - May 2003. [Article (HTML)]
+* Michael Blackstock, Introducing Bluetooth. for SynchroPoint Wireless, BC TIA Monitor, December 2000. [Article (PDF)]
 
 #### Posters
 
