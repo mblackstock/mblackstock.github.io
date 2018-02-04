@@ -1,15 +1,14 @@
 # Home
 
+Mike Blackstock is an independent consultant, software architect & developer specializing in applications, tools and middleware for the Internet of Things.
 
-I'm a software developer, researcher and entrepreneur.  Currently I am CTO and co-founder of [Sense Tecnic Systems](http://www.sensetecnic.com) (STS).  Previously, I've been a researcher at the [University of British Columbia](https://www.ubc.ca/) and worked in tech lead positions in startups in Vancouver, BC.
+Currently he is also CTO and co-founder of [Sense Tecnic Systems](http://www.sensetecnic.com) (STS).  Previously, he was a researcher at University of British Columbia and worked in tech leadership positions at [several startups in Vancouver, Canada](/experience).
 
-My current research interests include applications, tools and middleware for the Internet of Things.  Work at STS focuses on a cloud-hosted and distributed data flow tools and runtime using [Node-RED](https://nodered.org). At STS I designed and implemented the Web of Things Toolkit - the WoTKit - a web centric system for managing 'things': controlling devices, collecting and storing data, providing visualization tools, and a data flow processing engine.
-
-At UBC and previous companies I've worked on a variety of projects.  Mobile applications for citizen engagement, mobile and social network applications to encourage sustainable behaviours on campus, systems to support large scale interaction and convergence of mobile phones, situated displays and sensors, financial transaction management software, peer to peer collaboration systems, mobile enterprise middleware, mobile phone multiplayer games, and Mac OS printer drivers.  In my PhD thesis work I proposed a common programming model for [ubiquitous computing](https://en.wikipedia.org/wiki/Ubiquitous_computing) systems and evaluated this model by integrating several representative and well known research systems.
+For more details on my background and experience, check out the links below.  Feel free to contact me at the coordinates below if you have an idea or project I can help you with.
 
 ## Details
 
-* [Industry Experience](/industry)
+* [Experience](/experience)
 * [Publications](/publications)
 * [Projects](/projects)
 
