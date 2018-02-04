@@ -1,5 +1,4 @@
-# Home
-
+# Michael Blackstock
 Mike Blackstock is an independent consultant, software architect & developer specializing in applications, tools and middleware for the Internet of Things.
 
 Currently he is also CTO and co-founder of [Sense Tecnic Systems](http://www.sensetecnic.com) (STS).  Previously, he was a researcher at University of British Columbia and worked in tech leadership positions at [several startups in Vancouver, Canada](/experience).
