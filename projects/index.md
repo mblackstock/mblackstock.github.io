@@ -3,7 +3,7 @@ layout: default
 title: Projects
 ---
 
-## Selected Projects
+## Projects
 
 ### Current
 
@@ -15,7 +15,7 @@ FRED is an IoT integration platform that manages instances of the popular IoT pr
 
 Extensions to Node-RED to distribute flows across devices, gateways and the cloud ([the Fog](https://en.wikipedia.org/wiki/Fog_computing)) with Nam Giang - PhD student at UBC. [github](https://github.com/namgk/dnr-editor)
 
-### Some Past Projects
+### Selected Past Projects
 
 #### WoTKit: The Web of Things Toolkit
 
