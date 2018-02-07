@@ -3,7 +3,7 @@ layout: default
 title: Projects
 ---
 
-## Projects
+## Example Projects
 
 ### Current
 
