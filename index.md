@@ -1,6 +1,6 @@
 # Michael Blackstock
 
-Mike Blackstock is an independent consultant, startup CTO/VP Eng., software architect and developer.  [Recent experience](/experience) has focused on IoT platforms and big data.
+Mike Blackstock is an independent consultant, startup CTO/VP Eng., software architect and developer.
 
 Currently he is also CTO and co-founder of [Sense Tecnic Systems](http://www.sensetecnic.com) (STS).  Previously, he was a researcher at University of British Columbia and worked in tech leadership positions at [several startups in Vancouver, Canada](/experience).
 
