@@ -11,6 +11,7 @@ For more details on my background and experience, check out the links below.  Fe
 * [Experience](/experience)
 * [Publications](/publications)
 * [Projects](/projects)
+* [Blog](/blog)
 
 ## Contact
 
