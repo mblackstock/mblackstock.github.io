@@ -1,14 +1,14 @@
 # Michael Blackstock
 
-Mike Blackstock is an independent consultant, startup CTO/VP Eng., software architect and developer.
+Blackstock is a freelance consultant, technical advisor, writer, CS/Math tutor and open source contributor.
 
-Currently he is also CTO and co-founder of [Sense Tecnic Systems](http://www.sensetecnic.com) (STS).  Previously, he was a researcher at University of British Columbia and worked in tech leadership positions at [several startups in Vancouver, Canada](/experience).
+Previously I was co-founder of [Sense Tecnic Systems](http://www.sensetecnic.com) (STS) and researcher at University of British Columbia.  I've has worked in tech leadership positions at [several startups in Vancouver, Canada](https://www.linkedin.com/in/mblackstock/).
 
-For more details on my background and experience, check out the links below.  Feel free to contact me at the coordinates below if you have an idea or project I can help you with.
+For more details on my background and experience, check out the links below.  Feel free to contact me at the coordinates below if you have an idea or a project I can help you with.
 
 ## Details
 
-* [Experience](/experience)
+* [Experience](https://www.linkedin.com/in/mblackstock/)
 * [Publications](/publications)
 * [Projects](/projects)
 * [Blog](/blog)
