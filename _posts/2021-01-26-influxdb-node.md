@@ -1,12 +1,12 @@
 ---
 layout: post
-title:  "New InfluxDB Nodes"
-date:   2020-12-09
+title:  "New InfluxDB 2.0 Nodes"
+date:   2021-01-26
 author: Mike Blackstock
 comments: true
 ---
 
-Last year I published a revised set of InfluxDB nodes [node-red-contrib-influxdb](https://flows.nodered.org/node/node-red-contrib-influxdb) for [Node-RED]() with the help of Alberto Armijo @aarmijo (thank you!).  This new version supports both InfluxDb 1.x and 2.0 using both the older InfluxQL query syntax and Flux query syntax.
+Last year I published a revised set of InfluxDB nodes [node-red-contrib-influxdb](https://flows.nodered.org/node/node-red-contrib-influxdb) for [Node-RED]() with significant contributions by Alberto Armijo @aarmijo (thank you!).  This new version supports both InfluxDb 1.x and 2.0 using both the older InfluxQL query syntax and Flux query syntax.
 
 In this post, I'll show you how to set up InfluxDb 2.0 locally using Docker and how to read and write data using the new nodes.  These nodes can write data to InfluxDb in a number of ways, so we'll provide some examples on how to write single values, multiple fields, tags, multiple points and include client side timestamps.
 
@@ -16,7 +16,7 @@ We'll install InfluxDb using Docker, so you'll need to install Docker first.  In
 
 ## Installing and Configuring InfluxDb 2.0
 
-Once Docker is installed, downloading and running InfluxDb for some quick testing is simple.  Execute the following command to download and install the latest version as of this writinging:
+Once Docker is installed, downloading and running InfluxDb for some quick testing is simple.  Execute the following command to download and install the latest version as of this writing:
 
 ```
 docker run --name influxdb -p 8086:8086 quay.io/influxdb/influxdb:v2.0.3
@@ -204,9 +204,9 @@ Click on the Inject node to query the database, and you'll see output like this 
 
 Output similar to the query output on the CLI.
 
-## Writing data
+## Data formats
 
-The InfluxDb output node supports a variety of data formats.  Getting them right can be a bit tricky.  There are 4 different *shapes* of the message payload supported.  Here is some Javascript snippets to illustrate the different message payloads supported.
+The InfluxDb output node supports a variety of data formats.  There are 4 different *shapes* of the message payload supported.  Here are some Javascript snippets to illustrate the different options:
 
 ### Single value
 
@@ -227,7 +227,7 @@ msg.paload = true;
 
 ### Multiple Fields Object
 
-When the payload is an object, each property will be written as a separate field.  For example:
+When `msg.payload` is an object, each property will be written as a separate field.  For example:
 
 ```javascript
 msg.payload = {
@@ -256,7 +256,7 @@ msg.payload = [{
 
 ### Multiple Points
 
-Finally you can output multiple points.  To do so, you supply a payload with an array of arrays.  For example:
+Finally you can output multiple points.  To do so, you supply a payload containing an array of arrays.  For example:
 
 ```javascript
 msg.payload = [
@@ -303,7 +303,7 @@ I will also spend some more time improving the documentation and providing more 
 
 Recently we added support for the [`complete` node](https://nodered.org/blog/2019/09/20/node-done) so that you can trigger flows when you are sure data has been written to, or queried from InfluxDb.  This should help ensure data is not lost.
 
-I am considering adding more validation to ensure output data is formatted correctly given the various possible formats.
+I am considering adding optional validation to ensure output data is formatted correctly given the various possible formats.
 
 Let me if you have any questions or feedback in the comments here or raise an issue on [Github](https://github.com/mblackstock/node-red-contrib-influxdb).  Of course, contributions are welcome including documentation (README), or translations.
 
