@@ -10,22 +10,21 @@ comments: true
 
 Node-RED is an open source 'low-code' visual programming tool that allows users to wire together various components that communicate with devices, services and APIs.  It's built with Javascript and Node.js making it easy to extend by adding your own nodes.  As I've mentioned in previous posts, I am a HUGE fan.  I've always been particularly impressed with the flow editor UI, but didn't fully understand how it worked and wanted to understand how it implemented such a great drag and drop UI for creating and editing flows.  
 
-I tend to learn more by doing so I decided to build a 'toy' version of the editor using some of the tools, languages and libraries I've started to use recently.  This bit of code and write up is the restult of that.  Hopefully you find [this code](https://github.com/mblackstock/flow-editor) interesting and perhaps useful.
+I tend to learn more by doing so I decided to build a 'toy' version of the editor using some of the tools, languages and libraries I've started to use recently.  This bit of code and write up is the restult of that.  Hopefully you find [this code](https://github.com/mblackstock/flow-editor) interesting and useful.
 
 You can try it out here:
 
 <iframe width="650" height="400" src="/demos/flow-editor">
 </iframe>
 
-As you can see, this editor is very limited.  My goal was to start with a (very) small subset of what the Node-RED editor can do:
+As you can see, this editor is very limited.  My goal was to start with a (very) small subset of what the Node-RED editor can do using a flow format that is a subset of Node-REDs.
 
 * Drag and drop different node types from the palette onto the canvas.
 * Nodes may have different colours, a single input connector, and different numbers of output connectors.
 * Move nodes around and connect nodes to each other with links.
 * Select and delete nodes and links.
-* I wanted to use a flow format that is a subset of Node-REDs.
 
-To get going, I spent time time browsing the Node-RED code taking some of the CSS and I searched for some sample code to understand how d3 works.  This [example of a directed graph editor in d3](http://bl.ocks.org/rkirsling/5001347) by [Ross Kirsling](https://github.com/rkirsling) proved very helpful.
+To get going, I spent time time browsing the Node-RED code and I searched for some sample code to understand how the [D3 visualization library](https://d3js.org/) works.  This [example of a directed graph editor in d3](http://bl.ocks.org/rkirsling/5001347) by [Ross Kirsling](https://github.com/rkirsling) proved very helpful.
 
 In the rest of this post I'll outline the code base, how it works, then some lessons learned.
 
@@ -33,7 +32,7 @@ In the rest of this post I'll outline the code base, how it works, then some les
 
 You can check out the code [on github](https://github.com/mblackstock/flow-editor).
 
-The editor code lives in a [lerna monorepo](https://github.com/lerna/lerna) with the following directory structure.
+The editor code lives in a [lerna monorepo](https://github.com/lerna/lerna) with the following directory structure (even though there is only one module the plan is to add additional modules over time).
 
 ```
 .
@@ -60,26 +59,24 @@ The editor code lives in a [lerna monorepo](https://github.com/lerna/lerna) with
         └── tsconfig.json
 ```
 
-Even though there is only one module the plan is to add additional modules over time.
+The code is written in Typescript.  While there are some benefits related to static typing and strong IDE support in VS Code, it does add an addition step of transpiling.  I didn't think this was a big deal given that I wanted to use a web application bundler and give Typescript a try.
 
-The code is written in Typescript.  While there are some benefits related to static typing and strong IDE support in VS Code, it does add an addition step of transpiling.  I didnt't think this was a big deal given that I wanted to use a web application bundler and wanted to give Typescript a try.
-
-I decided to use [Parcel](https://parceljs.org/); you just use a single command to serve up your code, and another to build your code with no configuration.
-
-To build the code ensure you have node installed, then:
+I decided to use the [Parcel](https://parceljs.org/) web application bundler. To build the code ensure you have node installed, then:
 
 ```
 cd packages/editor
 npm start
 ```
 
-Parcel will serve up the code at http://localhost:1234
+Parcel will serve up the code at [http://localhost:1234](http://localhost:1234)
 
 ## How it works
 
 Each of the areas in the editor page: the palette, the editor canvas and the configuration area is a separate web component created using the [LitElement](https://lit-element.polymer-project.org/) library.
 
-The `index.html` file contains the web page `<div id="demo">` placeholder for the web components that are added dynamically to this element in `index.ts`.  There I define the three web components: `palette-element`, `flow-element` and `config-element`.  The `index.ts` file also contains some test data: three node types added to the registry, and a simple flow to start with.
+>Note that in the following discussion, each source file has a link to the code in github.
+
+The [`index.html`](https://github.com/mblackstock/flow-editor/blob/master/packages/editor/src/index.html) file contains the web page `<div id="demo">` placeholder for the web components that are added dynamically to this element in `index.ts`.  There I define the three web components: `palette-element`, `flow-element` and `config-element`.  The `index.ts` file also contains some test data: three node types added to the registry, and a simple flow to start with.
 
 It then dynamically renders the contents of the div with the three web components using [lit-html](https://lit-html.polymer-project.org/), setting event handlers and properties in the render call:
 
@@ -102,7 +99,7 @@ When a `dropNode` event is received from the palette, we call `dropNode` on the 
 
 The `flow-element` is set up with an initial flow, and the node registry.  It can trigger two events: `@selectNode`, when a node is selected (single click), and `@configNode`, when a node is to be configured in the flow (double click).  Currently these events just output to the console.  The `config-element` is just a placeholder for a future node configuration UI.
 
-The node registry `registry.ts` is a wrapper on a map of node types to node descriptions.  
+The node registry [`registry.ts`](https://github.com/mblackstock/flow-editor/blob/master/packages/editor/src/registry.ts) is a wrapper on a map of node types to node descriptions.
 
 ## The palette component
 
