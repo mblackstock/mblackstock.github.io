@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "New InfluxDB 2.0 Nodes"
-date:   2021-01-26
+date:   2021-02-07
 author: Mike Blackstock
 comments: true
 ---
