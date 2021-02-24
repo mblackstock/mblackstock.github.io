@@ -1,14 +1,14 @@
 ---
 layout: post
 title:  "Flow Editor"
-date:   2021-01-23
+date:   2021-02-24
 author: Mike Blackstock
 comments: true
 ---
 
 # Introduction
 
-Node-RED is an open source 'low-code' visual programming tool that allows users to wire together various components that communicate with devices, services and APIs.  It's built with Javascript and Node.js making it easy to extend by adding your own nodes.  As I've mentioned in previous posts, I am a HUGE fan.  I've always been particularly impressed with the flow editor UI, but didn't fully understand how it worked and wanted to understand how it implemented such a great drag and drop UI for creating and editing flows.  
+As I've mentioned in previous posts, I am a HUGE fan of Node-RED.  I've always been particularly impressed with the flow editor UI, but didn't fully understand how it worked and wanted to understand how it implemented such a great drag and drop UI for creating and editing flows.  
 
 I tend to learn more by doing so I decided to build a 'toy' version of the editor using some of the tools, languages and libraries I've started to use recently.  This bit of code and write up is the restult of that.  Hopefully you find [this code](https://github.com/mblackstock/flow-editor) interesting and useful.
 
