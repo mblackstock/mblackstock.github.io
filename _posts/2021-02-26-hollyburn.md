@@ -8,7 +8,7 @@ comments: true
 
 # Introduction
 
-One of the things I've been doing during the pandemic is taking weekly hikes with my friend [Rob Muir](rgmuir).  One of our favourite hikes is up to the top of Hollyburn Mountain, a mountain just on the edge of Cypress Provincial Park.  Here are a couple of the great shots of the mountain and forest views I've collected during our hikes.
+One of the things I've been doing during the pandemic is taking weekly hikes with my friend [Rob Muir](https://twitter.com/rgmuir).  One of our favourite hikes is up to the top of Hollyburn Mountain, a mountain just on the edge of Cypress Provincial Park.  Here are a couple of the great shots of the mountain and forest views I've collected during our hikes.
 
 ## Photos
 
