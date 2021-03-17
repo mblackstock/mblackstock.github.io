@@ -1,3 +1,11 @@
+---
+layout: post
+title:  "PixelPAD Asteroids"
+date:   2021-03-16
+author: Mike Blackstock
+comments: true
+---
+
 Recently I took a weekend job teaching kids how to code at a Vancouver-based company called [Under the GUI (UTG)](https://underthegui.com/).  One of the cool things about the company is that they have their own platform for teaching kids how to code called [PixelPAD](https://pixelpad.io/).  The web based platform provides an easy to use game engine for kids to learn how to code in Python.  In this post I'll introduce PixelPAD and demonstrate it with an Asteroids game.
 
 ## PixelPAD Introduction
