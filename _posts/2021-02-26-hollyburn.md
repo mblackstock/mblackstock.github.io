@@ -38,7 +38,7 @@ Last one to show off the dramatic snow and clouds that is typical while hiking u
 
 # Thanks
 
-Thanks to Rob Muir for meeting up every week to get out on a hike somewhere around our amazing city and the back country.  I feel blessed to live in this part of the world and  the time to enjoy it.  Stay tuned for more photo blog entries of different hikes around Vancouver.
+Thanks to Rob Muir for meeting up every week to get out on a hike somewhere around our amazing city and the back country.  I feel blessed to live in this part of the world and to have the time to enjoy it.  Stay tuned for more hikes around Vancouver.
 
 
 
