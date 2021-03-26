@@ -47,7 +47,7 @@ This will be confirmed, and saved in your configuration.
 Now, for the InfluxDb nodes to connect to the database, you'll need a token.  To get the current list of tokens use:
 
 ```
-influxdb auth list
+influx auth list
 ```
 
 This will return the token and permissions for the admin user just created, for example (INFLUXDB_TOKEN will contain your token):
@@ -76,7 +76,7 @@ influx write \
 Then we can query the data to ensure it was written as follows:
 
 ```
-influx query 'from(bucket: "test") |> range(start: -1h) |> filte (fn: (r) => r._measurement=="myMeasurement")'
+influx query 'from(bucket: "test") |> range(start: -1h) |> filter (fn: (r) => r._measurement=="myMeasurement")'
 ```
 You should see output similar to the following (timestamps will be different).
 
