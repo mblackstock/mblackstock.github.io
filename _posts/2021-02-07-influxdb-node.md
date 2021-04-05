@@ -297,7 +297,7 @@ Common errors include connectivity errors related to getting the URL right in th
 
 These nodes have a lot of features including support for older Influx database versions and InfluxQL queries as described in the [README](https://flows.nodered.org/node/node-red-contrib-influxdb).
 
-Over time I expect to deprecate support for versions older than 1.8, InfluxQL, and the Batch output node, but I expect this will not be for some time.
+Over time I expect to deprecate support for versions older than 1.8, InfluxQL, but I expect this will not be for some time.
 
 I will also spend some more time improving the documentation and providing more meaningful examples.
 
